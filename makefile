@@ -6,7 +6,7 @@ game.o: game.c
 	gcc -c game.c
 	@echo object code generated
 
-parser.tab.c: parser.tab.h
+parser.tab.c: parser.y
 	bison -d parser.y
 	@echo parser.tab.c code generated
 
